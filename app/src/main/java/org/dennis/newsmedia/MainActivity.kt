@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         val sharedPrefs = getSharedPreferences("production", Context.MODE_PRIVATE)
         val isSignedIn = sharedPrefs.getBoolean("is_signed_in", false)
         d("daniel", "is user signed in? $isSignedIn")
+        if(!isSignedIn){
+            d("daniel", "going to login screen")
+        }else{
+            d("daniel", "user is signed in, display news")
+        }
 
     }
 }
