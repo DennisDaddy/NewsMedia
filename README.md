@@ -1,4 +1,4 @@
-#NewsMedia
+# NewsMedia
 This is a news media application.
 
 ## Features
